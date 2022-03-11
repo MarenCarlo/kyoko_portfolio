@@ -1,0 +1,367 @@
+    html {
+        scroll-behavior: smooth;
+        background-color: #000;
+        overflow-x: hidden!important;
+    }
+    
+    * {
+        transition: all 0.5s;
+    }
+    /* FONTS */
+    
+    @font-face {
+        font-family: "Titles";
+        src: url("../fonts/AldotheApache.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: "cards";
+        src: url("../fonts/Hack-Regular.ttf") format("truetype");
+    }
+    /* NAV */
+    
+    .nav {
+        background-color: #000000;
+        border-bottom: solid 1px #ffffff;
+        box-shadow: 4px 6px 40px 5px#000000b6;
+        width: 100vw;
+    }
+    
+    .brand-logo {
+        font-family: Titles;
+        position: relative;
+        top: 0.5vh;
+    }
+    
+    .link:hover {
+        background-color: #343434;
+    }
+    /* HEADER */
+    
+    .section {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #portada {
+        height: 100vh;
+    }
+    
+    #parallax_X {
+        height: 100vh;
+    }
+    
+    .blur img {
+        filter: blur(15px);
+    }
+    
+    .title_header {
+        margin-top: 20vh;
+        font-family: Titles;
+        background-color: #ffffff;
+        padding: 2%;
+        box-shadow: 5px 8px 0px 3px #393939;
+    }
+    
+    .subtitle_header {
+        font-family: cards;
+        background-color: #ffffff;
+        padding: 2%;
+        box-shadow: 5px 8px 0px 3px #393939;
+    }
+    
+    .title_header:hover {
+        padding: 2%;
+        box-shadow: 5px 15px 0px 3px #393939;
+    }
+    
+    .subtitle_header:hover {
+        background-color: #ffffff;
+        padding: 2%;
+        box-shadow: 5px 15px 0px 3px #393939;
+    }
+    
+    .mc_img {
+        margin-top: 25%;
+        margin-left: 25%;
+        border-radius: 50%;
+    }
+    /* DESTREZAS */
+    
+    #destrezas {
+        height: 100vh;
+        margin-top: 15rem;
+    }
+    
+    .destreza_title {
+        font-family: Titles;
+        background-color: #ffffff;
+        box-shadow: 5px 8px 0px 3px #393939;
+        padding: 2%;
+    }
+    
+    .subtitle_header {
+        background-color: #ffffff;
+        padding: 2%;
+        box-shadow: 5px 8px 0px 3px #393939;
+    }
+    /* CONTACTO */
+    
+    #contacto {
+        background: rgb(249, 171, 87);
+        background: -moz-linear-gradient(0deg, rgba(249, 171, 87, 1) 0%, rgba(244, 175, 198, 1) 11%, rgba(227, 152, 190, 1) 25%, rgba(114, 37, 215, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(249, 171, 87, 1) 0%, rgba(244, 175, 198, 1) 11%, rgba(227, 152, 190, 1) 25%, rgba(114, 37, 215, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(0deg, rgba(249, 171, 87, 1) 0%, rgba(244, 175, 198, 1) 11%, rgba(227, 152, 190, 1) 25%, rgba(114, 37, 215, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#f9ab57", endColorstr="#000000", GradientType=1);
+        height: fit-content;
+    }
+    
+    .mountains {
+        width: 100vw;
+        height: 10vh;
+        position: relative;
+        bottom: -4vh;
+    }
+    
+    .img_footer {
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    /* ANIMACIONES DE FADE */
+    
+    .fadeTop {
+        opacity: 0;
+        transform: translate(0, 10vh);
+        transition: all 1s;
+    }
+    
+    .fadeRight {
+        opacity: 0;
+        transform: translate(10vh, 0vh);
+        transition: all 1s;
+    }
+    
+    .fadeLeft {
+        opacity: 0;
+        transform: translate(-10vh, 0vh);
+        transition: all 1s;
+    }
+    
+    .fadeBottom {
+        opacity: 0;
+        transform: translate(10vh, 10vh);
+        transition: all 1s;
+    }
+    
+    .visible {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    /* buttons */
+    /* SPOTIFY BUTTON */
+    
+    .spotify_button {
+        cursor: pointer;
+        background: rgb(2, 178, 173);
+        background: -moz-linear-gradient(55deg, rgba(2, 178, 173, 1) 0%, rgba(77, 236, 231, 1) 100%);
+        background: -webkit-linear-gradient(55deg, rgba(2, 178, 173, 1) 0%, rgba(77, 236, 231, 1) 100%);
+        background: linear-gradient(55deg, rgba(2, 178, 173, 1) 0%, rgba(77, 236, 231, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#02b2ad", endColorstr="#4dece7", GradientType=1);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #FFF;
+    }
+    
+    .spotify_button:hover {
+        color: #000000;
+    }
+    
+    .spotify_logo {
+        margin: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+    }
+    /* INSTAGRAM BUTTON */
+    
+    .instagram_button {
+        cursor: pointer;
+        background: rgb(255, 133, 158);
+        background: -moz-linear-gradient(45deg, rgba(255, 133, 158, 1) 0%, rgba(255, 206, 157, 1) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(255, 133, 158, 1) 0%, rgba(255, 206, 157, 1) 100%);
+        background: linear-gradient(45deg, rgba(255, 133, 158, 1) 0%, rgba(255, 206, 157, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ff859e", endColorstr="#ffce9d", GradientType=1);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .instagram_button:hover {
+        color: #000000;
+    }
+    
+    .instagram_logo {
+        margin: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+    }
+    /* WHATSAPP BUTTON */
+    
+    .whatsapp_button {
+        cursor: pointer;
+        background: rgb(0, 228, 171);
+        background: -moz-linear-gradient(55deg, rgba(0, 228, 171, 1) 0%, rgba(108, 225, 83, 1) 100%);
+        background: -webkit-linear-gradient(55deg, rgba(0, 228, 171, 1) 0%, rgba(108, 225, 83, 1) 100%);
+        background: linear-gradient(55deg, rgba(0, 228, 171, 1) 0%, rgba(108, 225, 83, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00e4ab", endColorstr="#6ce153", GradientType=1);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .whatsapp_button:hover {
+        color: #000000;
+    }
+    
+    .whatsapp_logo {
+        margin: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+    }
+    /* SOUNDCLOUD BUTTON */
+    
+    .soundcloud_button {
+        cursor: pointer;
+        background: rgb(255, 83, 78);
+        background: -moz-linear-gradient(55deg, rgba(255, 83, 78, 1) 0%, rgba(255, 209, 0, 1) 100%);
+        background: -webkit-linear-gradient(55deg, rgba(255, 83, 78, 1) 0%, rgba(255, 209, 0, 1) 100%);
+        background: linear-gradient(55deg, rgba(255, 83, 78, 1) 0%, rgba(255, 209, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ff534e", endColorstr="#ffd100", GradientType=1);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .soundcloud_button:hover {
+        color: #000000;
+    }
+    
+    .soundcloud_logo {
+        margin: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+    }
+    /* YOUTUBE BUTTON */
+    
+    .youtube_button {
+        cursor: pointer;
+        background: rgb(243, 98, 131);
+        background: -moz-linear-gradient(55deg, rgba(243, 98, 131, 1) 0%, rgba(209, 34, 47, 1) 100%);
+        background: -webkit-linear-gradient(55deg, rgba(243, 98, 131, 1) 0%, rgba(209, 34, 47, 1) 100%);
+        background: linear-gradient(55deg, rgba(243, 98, 131, 1) 0%, rgba(209, 34, 47, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#f36283", endColorstr="#d1222f", GradientType=1);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .youtube_button:hover {
+        color: #000000;
+    }
+    
+    .youtube_logo {
+        margin: 0;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+    }
+    /* AURORA BOREALIS */
+    
+    .aurora-outer1 {
+        background: linear-gradient(30deg, #b879d5 0%, #e4ad4e 50%, #ea90bd 100%);
+        border-radius: 15px 15px 15px 15px;
+        background-size: 200%;
+        animation: aurora 10s infinite;
+        color: #FFF;
+        font-family: cards;
+    }
+    
+    .aurora-outer2 {
+        background: linear-gradient(30deg, #d9df7a 0%, #e4ad4e 50%, #87d887 100%);
+        border-radius: 15px 15px 15px 15px;
+        background-size: 200%;
+        animation: aurora 10s infinite;
+        color: #FFF;
+        font-family: cards;
+    }
+    
+    .aurora-outer3 {
+        background: linear-gradient(30deg, #b879d5 0%, #79d6c2 50%, #7e9ae4 100%);
+        border-radius: 15px 15px 15px 15px;
+        background-size: 200%;
+        animation: aurora 10s infinite;
+        color: #FFF;
+        font-family: cards;
+    }
+    
+    .aurora-outer4 {
+        background: linear-gradient(30deg, #e77e7e 0%, #cf6ea7 50%, #ea90bd 100%);
+        border-radius: 15px 15px 15px 15px;
+        background-size: 200%;
+        animation: aurora 10s infinite;
+        color: #FFF;
+        font-family: cards;
+    }
+    
+    .aurora-outer5 {
+        background: linear-gradient(30deg, #c963b1 0%, #ae4747 50%, #b8805a 100%);
+        border-radius: 15px 15px 15px 15px;
+        background-size: 200%;
+        animation: aurora 10s infinite;
+        color: #FFF;
+        font-family: cards;
+    }
+    
+    @keyframes aurora {
+        0% {
+            background-position: left top;
+        }
+        25% {
+            background-position: right top;
+        }
+        50% {
+            background-position: right bottom;
+        }
+        75% {
+            background-position: left bottom;
+        }
+        100% {
+            background-position: left top;
+        }
+    }
+    
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        transform: translateY(-50%);
+        font-size: 32px;
+        text-align: center;
+        color: white;
+    }
